@@ -16,9 +16,9 @@ CREATE TABLE workers (
     ratenumber VARCHAR NOT NULL,
     phonenum VARCHAR(255) NOT NULL,
     info VARCHAR(255) NOT NUll,
-
     created_at DATE DEFAULT CURRENT_TIMESTAMP
 );
+
 INSERT INTO workers (fullname,jobtitle,img,ratenumber,phonenum,info) VALUES
 (
 'mario saliba','full stack developer','https://media-exp1.licdn.com/dms/image/C4D03AQHc-4FfvvSAFQ/profile-displayphoto-shrink_800_800/0/1594492798405?e=1634774400&v=beta&t=datBhT_arhrHCuMq_DuPKgck3edmzrmvkIEy1F6NQ0A','4','05050505050','im a smart guy, Mario is a senior fullstack web developer that have alot of experience with frontend & backend development.'
