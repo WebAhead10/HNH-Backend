@@ -18,7 +18,7 @@ router.get("/users", verifyUser, allUsers);
 router.get("/job-title/:name", jobTitles);
 router.get("/worker/:id", singleWorker);
 router.get("/order/:id", singleOrder);
-router.post("/order", appointments);
+router.post("/order/:id", appointments);
 
 router.get("/toprated/:name", toprated);
 
