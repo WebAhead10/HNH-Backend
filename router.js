@@ -7,6 +7,7 @@ const jobTitles = require("./controllers/jobTitles.controller");
 const singleWorker = require("./controllers/singleWorker.controller");
 const singleOrder = require("./controllers/workerOrder.controller");
 const appointments = require("./controllers/appointments.controller");
+const toprated = require("./controllers/toprated.controller");
 const verifyUser = require("./middleware/verifyUser");
 
 router.post("/signup", signup);
@@ -19,5 +20,6 @@ router.get("/worker/:id", singleWorker);
 router.get("/order/:id", singleOrder);
 router.post("/order", appointments);
 
+router.get("/toprated/:name", toprated);
 
 module.exports = router;

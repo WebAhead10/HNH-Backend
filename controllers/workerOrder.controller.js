@@ -1,7 +1,6 @@
 const db = require("../database/connection");
 
 module.exports = (req, res) => {
-  console.log(req.params);
 
   db.query("SELECT * FROM workers WHERE id = $1", [req.params.id])
     .then((result) => {
